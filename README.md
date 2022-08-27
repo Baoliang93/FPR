@@ -4,7 +4,7 @@ Code for paper "No-Reference Image Quality Assessment by hallucinating Pristine 
 
 
 # Environment
-* Python python=3.8.5
+* python=3.8.5
 * pytorch=1.7.1=py3.8_cuda11.0.221_cudnn8.0.5_0
 
 # Running
