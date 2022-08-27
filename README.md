@@ -15,9 +15,9 @@ Code for paper "No-Reference Image Quality Assessment by hallucinating Pristine 
 * Train: 
   - For NI:  
     `python iqaScrach.py --list-dir='../scripts/dataset_name/' --resume='../models/model_files/checkpoint_latest.pkl' --pro=3 --dataset='dataloader_name'`  
-      - dataset_name can be: tid2013, databaserelease2, CSIQ, and kadid10k  
-      - model_files  can be: tid2013, live, csiq, and kadid
-      - dataloader_name: 'IQA' (for live and csiq  datasets), 'TID2013', and 'KADID' 
+      - dataset_name: "tid2013", "databaserelease2", "CSIQ", or "kadid10k"  
+      - model_files  can be: "tid2013", "live", "csiq", or "kadid"
+      - dataloader_name: "IQA" (for live and csiq  datasets), "TID2013", or "KADID"
  
 * Test:  
   `python  ./GSTVQA/TCSVT_Release/GVQA_Release/GVQA_Cross/cross_test.py --TrainIndex=1  
