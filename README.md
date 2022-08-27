@@ -9,12 +9,12 @@ Code for paper "No-Reference Image Quality Assessment by hallucinating Pristine 
 
 # Running
 * Data Prepare
-- [x] Download the natural image (NI) datasets and screen content image (SCI) datasets in to the `./FPR/datasets/`
-- [ ] We provide the pretrained checkpoints [here](https://mega.nz/folder/iDxH3R6a#WF25kk1XD30fhlZeSPJzDA). You can download it and put the included  files in to the "./FPR/FPR_IQA/FPR_NI/models/" or "./FPR/FPR_IQA/FPR_SCI/models/". 
+- [x] Download the natural image (NI) datasets and screen content image (SCI) datasets in to the path: `./FPR/datasets/`
+- [ ] We provide the pretrained checkpoints [here](https://mega.nz/folder/iDxH3R6a#WF25kk1XD30fhlZeSPJzDA). You can download it and put the included  files in to the path: `./FPR/FPR_IQA/FPR_NI/models/" or "./FPR/FPR_IQA/FPR_SCI/models/`. 
 
 * Train: 
  - For NI:
-   python iqaScrach.py --list-dir='../scripts/dataset_name/' --resume='../models/model_files/checkpoint_latest.pkl' --pro=3 --dataset='dataloader_name'
+   `python iqaScrach.py --list-dir='../scripts/dataset_name/' --resume='../models/model_files/checkpoint_latest.pkl' --pro=3 --dataset='dataloader_name'`
    (dataset_name can be: tid2013, live, csiq, and kadid)
   `python  ./GSTVQA/TCSVT_Release/GVQA_Release/GVQA_Cross/main.py --TrainIndex=1  
   (TrainIndex=1：using the CVD2014 datase as source dataset; 2: LIVE-Qua; 3: LIVE-VQC; 4: KoNviD）`
