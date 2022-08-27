@@ -20,15 +20,15 @@ Code for paper "No-Reference Image Quality Assessment by hallucinating Pristine 
       - dataloader_name: "IQA" (for live and csiq  datasets), "TID2013", or "KADID"  
       - split_id: '0' to '9'
   - For SCI:   
-      -  SIQAD: `python ./FPR/FPR_IQA/FPR_SCI/srciqaScrach.py  --pro=split_id`    
-      -  SCID: `python ./FPR/FPR_IQA/FPR_SCI/srcscid-iqaScrach.py  --pro=split_id`   
+      -  SIQAD: `python ./FPR/FPR_IQA/FPR_SCI/src/iqaScrach.py  --pro=split_id`    
+      -  SCID: `python ./FPR/FPR_IQA/FPR_SCI/src/scid-iqaScrach.py  --pro=split_id`   
       
 * Test:  
   - For NI:   
   `python ./FPR/FPR_IQA/FPR_SCI/src/iqaTest.py --list-dir='../scripts/dataset_name/' --resume='../models/model_files/model_best.pkl' --pro=split_id  --dataset='dataloader_name'`  
    - For SCI:   
-      -  SIQAD: `python ./FPR/FPR_IQA/FPR_SCI/srciqaTest.py  --pro=split_id`    
-      -  SCID: `python ./FPR/FPR_IQA/FPR_SCI/srcscid-iqaTest.py  --pro=split_id`
+      -  SIQAD: `python ./FPR/FPR_IQA/FPR_SCI/src/iqaTest.py  --pro=split_id`    
+      -  SCID: `python ./FPR/FPR_IQA/FPR_SCI/src/scid-iqaTest.py  --pro=split_id`
   
 
 # Details
