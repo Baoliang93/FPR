@@ -9,7 +9,7 @@ Code for paper "No-Reference Image Quality Assessment by hallucinating Pristine 
 
 # Running
 * Data Prepare
-- [x] Download the natural image (NI) datasets and screen content image (SCI) datasets in to the "./FPR/datasets/"
+- [x] Download the natural image (NI) datasets and screen content image (SCI) datasets in to the `./FPR/datasets/`
 - [ ] We provide the pretrained checkpoints [here](https://mega.nz/folder/iDxH3R6a#WF25kk1XD30fhlZeSPJzDA). You can download it and put the included  files in to the "./FPR/FPR_IQA/FPR_NI/models/" or "./FPR/FPR_IQA/FPR_SCI/models/". 
 
 * Train: 
