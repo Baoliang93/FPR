@@ -14,20 +14,23 @@ Code for paper "No-Reference Image Quality Assessment by hallucinating Pristine 
 
 * Train: 
   - For NI:  
-    `python iqaScrach.py --list-dir='../scripts/dataset_name/' --resume='../models/model_files/checkpoint_latest.pkl' --pro=3 --dataset='dataloader_name'`  
+    `python ./FPR/FPR_IQA/FPR_SCI/src/iqaScrach.py --list-dir='../scripts/dataset_name/' --resume='../models/model_files/checkpoint_latest.pkl' --pro=split_id --dataset='dataloader_name'`  
       -    dataset_name: "tid2013", "databaserelease2", "CSIQ", or "kadid10k"  
       -    model_files: "tid2013", "live", "csiq", or "kadid"
       - dataloader_name: "IQA" (for live and csiq  datasets), "TID2013", or "KADID"  
+      - split_id: '0' to '9'
   - For SCI:   
-      -  SIQAD: `python iqaScrach.py`    
-      -  SCID: `python scid-iqaScrach.py`   
-      -  
+      -  SIQAD: `python ./FPR/FPR_IQA/FPR_SCI/srciqaScrach.py  --pro=split_id`    
+      -  SCID: `python ./FPR/FPR_IQA/FPR_SCI/srcscid-iqaScrach.py  --pro=split_id`   
+      
 * Test:  
-  `python  ./GSTVQA/TCSVT_Release/GVQA_Release/GVQA_Cross/cross_test.py --TrainIndex=1  
-  （TrainIndex=1：using the CVD2014 datase as source dataset; 2: LIVE-Qua; 3: LIVE-VQC; 4: KoNviD）`  
+  - For NI:   
+  `python ./FPR/FPR_IQA/FPR_SCI/src/iqaTest.py --list-dir='../scripts/dataset_name/' --resume='../models/model_files/model_best.pkl' --pro=split_id  --dataset='dataloader_name'`  
+   - For SCI:   
+      -  SIQAD: `python ./FPR/FPR_IQA/FPR_SCI/srciqaTest.py  --pro=split_id`    
+      -  SCID: `python ./FPR/FPR_IQA/FPR_SCI/srcscid-iqaTest.py  --pro=split_id`
+  
 
 # Details
-* The model trained on each above four dataset have been provided in "./GSTVQA/TCSVT_Release/GVQA_Release/GVQA_Cross/models/"
-* The code for VGG based feature extraction is available at: https://mega.nz/file/LXhnETyD#M6vI5M9QqStFsEXCeiMdJ8BWRrLxvRbkZ1rqQQzoVuc
-* In the intra-dataset setting, it should be noted that we use 80% data for training and the rest 20% data for testing. We haven't used the 20% data for the best epoch selection to avoid testing data leaky, instead, the last epoch is used for performance validation.
+* Waitting...
 
