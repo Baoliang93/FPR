@@ -1,6 +1,6 @@
 # FPR
 Code for paper "No-Reference Image Quality Assessment by hallucinating Pristine Features".
-![image](https://github.com/Baoliang93/FPR/blob/main/FPR_IQA/framework.png  width="300px")
+![image](https://github.com/Baoliang93/FPR/blob/main/FPR_IQA/framework.png  width="1000" height="542")
 
 
 # Environment
