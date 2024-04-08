@@ -1,5 +1,5 @@
 # FPR
-Code for paper "No-Reference Image Quality Assessment by hallucinating Pristine Features".
+Code for paper "No-Reference Image Quality Assessment by Hallucinating Pristine Features".
 <img src="https://github.com/Baoliang93/FPR/blob/main/FPR_IQA/framework.png"  width="800" height="433" >
 
 
